@@ -1,0 +1,10 @@
+#Jukebox Dupe 2.1 Official
+#Jukebox Dupe es un plugin con el que se duplica con camas 
+#tambien hay un porcentaje en la cual puedes bariar segun la economia de tu server
+
+probability-percentage: 100
+
+#Command Reload "/jukeboxdupereload"
+
+#UNA cosa mas que aclarar este es mi propio 
+#codigo AnarchyGooD pero eres libre puedes ahcer lo que quieras

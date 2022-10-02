@@ -1,0 +1,8 @@
+name: JukeboxDupe
+version: ${project.version}
+main: me.akaishin.jukebox.JukeboxDupe
+authors: [ akaishin ]
+description: plugin de dupeo con la jukebox brutal
+commands:
+  jukeboxdupereload:
+    usage: /jukeboxdupereload
