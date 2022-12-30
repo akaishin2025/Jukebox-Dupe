@@ -1,6 +1,7 @@
 name: JukeboxDupe
 version: ${project.version}
 main: me.akaishin.jukebox.JukeboxDupe
+api-version: 1.19
 authors: [ akaishin ]
 description: plugin de dupeo con la jukebox brutal
 commands:

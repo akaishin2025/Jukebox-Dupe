@@ -34,22 +34,22 @@ public final class JukeboxDupe extends JavaPlugin { // PLUGIN CREADO POR XG2025 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 private final class JukeboxDupeListener implements Listener {
 
-        @EventHandler
-        public void onRightClick(PlayerInteractEvent event) {
-            Player p = event.getPlayer();
-            Block block = event.getClickedBlock();
-            ItemStack itemStack = event.getItem();
-            if(event.getClickedBlock() == null) return;
-                if (block.getType().equals(Material.JUKEBOX) && event.getAction().equals(Action.RIGHT_CLICK_BLOCK) && event.getPlayer().getInventory().getItemInOffHand().getType().isRecord()) {
-                    if (!(event.getPlayer().getInventory().getItemInMainHand().getType() == Material.AIR)) {
-                            int rng = (int)Math.round(Math.random() * 100);
-                                if (rng < getConfig().getInt("probability-percentage")) {
-                                    block.getWorld().dropItemNaturally(block.getLocation().add(0, 1, 0), p.getInventory().getItemInMainHand());
-                                }
-                        }
+    @EventHandler
+    public void onRightClick(PlayerInteractEvent event) {
+        Player p = event.getPlayer();
+        Block block = event.getClickedBlock();
+        ItemStack itemStack = event.getItem();
+        if(event.getClickedBlock() == null) return;
+            if (block.getType().equals(Material.JUKEBOX) && event.getAction().equals(Action.RIGHT_CLICK_BLOCK) && event.getPlayer().getInventory().getItemInOffHand().getType().isRecord()) {
+                if (!(event.getPlayer().getInventory().getItemInMainHand().getType() == Material.AIR)) {
+                        int rng = (int)Math.round(Math.random() * 100);
+                            if (rng < getConfig().getInt("probability-percentage")) {
+                                block.getWorld().dropItemNaturally(block.getLocation().add(0, 1, 0), p.getInventory().getItemInMainHand());
+                            }
                     }
                 }
             }
+        }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
