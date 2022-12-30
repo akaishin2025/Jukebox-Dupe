@@ -1,2 +1,2 @@
 # Jukebox-Dupe
-JukeboxDupe 2.1 Update
+JukeboxDupe 3.0 Update
